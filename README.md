@@ -1,5 +1,8 @@
 == README
 
+This whole blog tutorial can be found at 
+guides.rubyonrails.org/getting_started.html#getting-up-and-running-quickly-with-scaffolding
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
