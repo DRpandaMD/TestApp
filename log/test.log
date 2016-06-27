@@ -1,0 +1,76 @@
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160623233027')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-23 23:46:35', '2016-06-23 23:46:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-23 23:46:35', '2016-06-23 23:46:35', 298486374)[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 328ms (Views: 327.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.9ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:16:16', '2016-06-27 19:16:16', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:16:16', '2016-06-27 19:16:16', 298486374)[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 190ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:16:51', '2016-06-27 19:16:51', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:16:51', '2016-06-27 19:16:51', 298486374)[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 175ms (Views: 174.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:17:11', '2016-06-27 19:17:11', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:17:11', '2016-06-27 19:17:11', 298486374)[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 179ms (Views: 178.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "articles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:18:03', '2016-06-27 19:18:03', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2016-06-27 19:18:03', '2016-06-27 19:18:03', 298486374)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 185ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
